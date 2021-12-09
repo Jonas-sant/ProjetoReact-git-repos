@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import {ResetCSS} from './components/global/resetcss'
+import Layout from './components/layout';
+import ProfileCard from './components/profileCard';
+import Header from './components/header';
+import Repositories from './components/repositories'
+
+import api from './services/api';
+
 
 function App() {
+  console.log(api)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main>
+        <ResetCSS/>
+        <Layout>
+        
+            <Header />
+            <ProfileCard />
+            <Repositories />
+        </Layout>  
+      </main>
     </div>
   );
 }
