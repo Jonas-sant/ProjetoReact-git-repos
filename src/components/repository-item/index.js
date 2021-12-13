@@ -1,18 +1,21 @@
 import React from 'react';
+import * as Style from './style'
 const RepositoryItem = ({name,fullName,linkToRepo})=>{
     return(
-        <>
-            <h2>{name}</h2>
-            <h4>{fullName}</h4>
+        <Style.CardRepo>
+            <Style.Text2>{name}</Style.Text2>
+            <Style.Text4>Full Name:<Style.TextSpan>{fullName}</Style.TextSpan> </Style.Text4>
+            <Style.Text4>Link:</Style.Text4>
             <span>
-                <a  href="https://www.google.com" 
+                <Style.Link  href={linkToRepo} 
                     target="_blank" 
                     rel="noreferrer">
                     {linkToRepo}
-                </a>
+                </Style.Link>
             </span>
+            
 
-        </>
+        </Style.CardRepo>
     );
 }
 

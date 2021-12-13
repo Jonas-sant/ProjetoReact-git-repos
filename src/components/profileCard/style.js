@@ -23,24 +23,44 @@ export const Title = styled.h1`
     font-weight:bold;
 `;
 
+export const Link = styled.a`
+    color:blue;
+    font-size:16px;
+    text-decoration:none;
+    font-weight:bold;
+    font-family:'Roboto';
+    cursor:pointer;
+
+    &:hover{
+        text-decoration:underline;
+    }
+`;
+export const Text3 = styled.h3`
+    font-family:'Roboto';
+    font-weight:bold;
+    font-size:18px;
+`;
+export const Text4 = styled.h4`
+    font-family:'Roboto';
+    font-weight:bold;
+    font-size:16px;
+`;
+export const TextSpan = styled.span`
+    font-weight:bold;
+    font-family:'Roboto';
+
+`;
+export const Container=styled.div`
+    text-align:center;
+    margin-left:20px;
+    padding:3px;
+
+`;
+
+
 export const BoxInfos = styled.div`
     display:flex;
     flex-direction:column;
     border-left: 1px solid #FFFFFF;
     margin-left:25px;
-    padding-left:30px;
-
-    h3{
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-    }
-
-    h3 span:hover{
-        text-decoration: underline;
-        cursor:pointer;
-    }
-    h3 span a{
-        text-decoration: none;
-        color:#000;
-    }
-`;
+    padding-left:30px;`;

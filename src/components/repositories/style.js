@@ -4,7 +4,8 @@ import styled from 'styled-components';
 
 export const WrapperTabs = styled(Tabs)`
     font-size:16px;
-    width:50%;
+    width:85%;
+    margin:auto;
    
 `;
 
@@ -57,4 +58,11 @@ export const WrapperTabPanel = styled(TabPanel)`
   
 
    
+`;
+
+export const WrapperList = styled.div`
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
 `;
